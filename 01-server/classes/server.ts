@@ -3,7 +3,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import http from 'http';
 
-import Socket from '../classes/socket';
+import SocketServer from './sockets/connexion';
 import messagesRoutes from '../routes/messagesRoutes';
 import indexRoutes from '../routes/indexRoutes';
 
@@ -18,13 +18,14 @@ export default class Server {
     public port: number;
     public httpServer: http.Server;
 
+
     private constructor() {
         this.app = express();
         this.port = SERVER_PORT
         this.config();
         this.routes();
         this.httpServer = new http.Server(this.app);
-        new Socket(this.httpServer);
+        new SocketServer(this.httpServer);
 
     }
 
