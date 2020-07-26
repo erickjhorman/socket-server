@@ -20,7 +20,7 @@ export default class SocketConexion {
       console.log('Connected client');
 
       // Messages
-      socket.message(client);
+      socket.message(client, this.io);
 
       /* See when a user disconnects  */
       socket.discconnect(client);

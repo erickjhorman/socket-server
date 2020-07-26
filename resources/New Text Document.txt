@@ -1,0 +1,26 @@
+npm init 
+npm i express cors body-parser 
+npm i @types/express --save-dev
+npm install @types/cors --save-dev
+npm install @types/morgan  --save-dev
+
+typeScript
+tsc --init
+tsc --w
+
+git 
+git tag
+git tag -a v1.0.0  -m"Rest server done"
+git push --tags
+
+--------------------------
+git push -u origin master
+
+
+sockets
+ npm i socket.io
+npm install @types/socket.io --save-dev
+
+ngx-socket-io
+https://www.npmjs.com/package/ngx-socket-io
+npm i ngx-socket-io

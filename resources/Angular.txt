@@ -1,0 +1,3 @@
+Components
+
+ng g c components/footer
